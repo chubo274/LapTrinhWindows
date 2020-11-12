@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CECF22AD-CCCA-422A-8D98-683442E92C1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DuLich</RootNamespace>
+    <AssemblyName>DuLich</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DuLichDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DuLichDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ADMIN_HoTroKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ADMIN_HoTroKhachHang.Designer.cs">
+      <DependentUpon>GUI_ADMIN_HoTroKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ADMIN_HoTro_SuaBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ADMIN_HoTro_SuaBook.Designer.cs">
+      <DependentUpon>GUI_ADMIN_HoTro_SuaBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ADMIN_HoTro_SuaKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ADMIN_HoTro_SuaKhachHang.Designer.cs">
+      <DependentUpon>GUI_ADMIN_HoTro_SuaKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ADMIN_TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ADMIN_TaiKhoan.Designer.cs">
+      <DependentUpon>GUI_ADMIN_TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ADMIN_ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ADMIN_ThongKe.Designer.cs">
+      <DependentUpon>GUI_ADMIN_ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ADMIN_Tour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ADMIN_Tour.Designer.cs">
+      <DependentUpon>GUI_ADMIN_Tour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ChiTietTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ChiTietTour.Designer.cs">
+      <DependentUpon>GUI_ChiTietTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_DangNhap.Designer.cs">
+      <DependentUpon>GUI_DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DatTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_DatTour.Designer.cs">
+      <DependentUpon>GUI_DatTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_GiaoDienChucNang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_GiaoDienChucNang.Designer.cs">
+      <DependentUpon>GUI_GiaoDienChucNang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI_TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_TrangChu.Designer.cs">
+      <DependentUpon>GUI_TrangChu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI_ADMIN_HoTroKhachHang.resx">
+      <DependentUpon>GUI_ADMIN_HoTroKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ADMIN_HoTro_SuaBook.resx">
+      <DependentUpon>GUI_ADMIN_HoTro_SuaBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ADMIN_HoTro_SuaKhachHang.resx">
+      <DependentUpon>GUI_ADMIN_HoTro_SuaKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ADMIN_TaiKhoan.resx">
+      <DependentUpon>GUI_ADMIN_TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ADMIN_ThongKe.resx">
+      <DependentUpon>GUI_ADMIN_ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ADMIN_Tour.resx">
+      <DependentUpon>GUI_ADMIN_Tour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ChiTietTour.resx">
+      <DependentUpon>GUI_ChiTietTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DangNhap.resx">
+      <DependentUpon>GUI_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DatTour.resx">
+      <DependentUpon>GUI_DatTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_GiaoDienChucNang.resx">
+      <DependentUpon>GUI_GiaoDienChucNang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="GUI_TrangChu.resx">
+      <DependentUpon>GUI_TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DuLichDataSet.xsc">
+      <DependentUpon>DuLichDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DuLichDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DuLichDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DuLichDataSet.xss">
+      <DependentUpon>DuLichDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{0b24b03c-78e7-4efd-9003-4b79a02b0b84}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{e74a7709-baa5-4a80-b5d6-55de18a80c1e}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trangchu_bg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
