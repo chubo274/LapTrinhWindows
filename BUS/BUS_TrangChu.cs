@@ -14,6 +14,10 @@ namespace BUS
         {
             return TRC.GetDanhSachTour();
         }
+        public DataTable LoadComboBox()
+        {
+            return TRC.LoadComboBox();
+        }
         public List<DTO_Tour> DanhSachTour()
         {
             return TRC.DanhSachTour();

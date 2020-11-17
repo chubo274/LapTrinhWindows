@@ -7,7 +7,7 @@ namespace DAL
 {
     public class KetNoi
     {
-        public static String connString = @"Data Source=DESKTOP-NVB6O2Q;Initial Catalog=DuLich;Integrated Security=True";
+        public static String connString = @"Data Source=DESKTOP-PM6R5EE;Initial Catalog=DuLich;Integrated Security=True";
         public SqlConnection conn = null;
         public KetNoi()
         {

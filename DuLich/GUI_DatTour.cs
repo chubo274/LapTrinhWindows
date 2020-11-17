@@ -55,7 +55,7 @@ namespace DuLich
                 MessageBox.Show("Vui lòng nhập đúng định dạng trường tên khách hàng", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            else if (dtpNgaySinh.Text.Equals(DateTime.Now.ToString("dd/MMM/yy").Trim()))
+            else if (dtpNgaySinh.Text.Equals(DateTime.Now.ToShortDateString()) || DateTime.Compare(dtpNgaySinh.Value,DateTime.Now)>0)
             {
                 MessageBox.Show("Vui lòng nhập ngày sinh", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;

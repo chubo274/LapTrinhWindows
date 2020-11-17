@@ -102,7 +102,17 @@ namespace DuLich
         private void GUI_TrangChu_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'duLichDataSet.khuvuc' table. You can move, or remove it, as needed.
-            this.khuvucTableAdapter.Fill(this.duLichDataSet.khuvuc);
+            //this.khuvucTableAdapter.Fill(this.duLichDataSet.khuvuc);
+            try
+            {
+                cbKhuVuc.DataSource = obj.LoadComboBox();
+                cbKhuVuc.DisplayMember = "tenkhuvuc";
+                cbKhuVuc.ValueMember = "makhuvuc";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Có lỗi khi load dữ liệu!\n", ex.ToString());
+            }
 
         }
 

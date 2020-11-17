@@ -13,6 +13,10 @@ namespace DAL
         {
             return base.GetTable("Select * From tour");
         }
+        public DataTable LoadComboBox()
+        {
+            return base.GetTable("Select * From khuvuc");
+        }
         public List<DTO_Tour> DanhSachTour()
         {
             List<DTO_Tour> list = new List<DTO_Tour>();
